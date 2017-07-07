@@ -460,6 +460,7 @@ void processCommand() {
     case 2:
       Serial.println(F("Codigo G finalizado"));
       zAxisMove(1);
+      disable();
       break;
     case 17:  // enable motors
       Serial.print(F("Comando M"));
